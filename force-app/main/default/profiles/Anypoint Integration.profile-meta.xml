@@ -23484,6 +23484,10 @@
         <enabled>false</enabled>
         <flow>copadovsm__VSM_Threshold_Flow</flow>
     </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>test</flow>
+    </flowAccesses>
     <layoutAssignments>
         <layout>Account-Formato de cuentas</layout>
     </layoutAssignments>
