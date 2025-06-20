@@ -1,23 +1,22 @@
 public class SimpleCalculator {
     
     /**
-     * Method to add two numbers
-     * @param a First number
-     * @param b Second number
-     * @return Sum of the two numbers
+     * Method to add two integers and return the result
+     * @param num1 First integer
+     * @param num2 Second integer
+     * @return The sum of the two integers
      */
-    public static Integer addNumbers(Integer a, Integer b) {
-        System.debug('Adding numbers: ' + a + ' + ' + b);
-        return a + b;
+    public static Integer add(Integer num1, Integer num2) {
+        return num1 + num2;
     }
     
     /**
-     * Method to print the sum of two numbers
-     * @param a First number
-     * @param b Second number
+     * Method to display the result of adding two numbers
+     * @param num1 First integer
+     * @param num2 Second integer
      */
-    public static void printSum(Integer a, Integer b) {
-        Integer sum = addNumbers(a, b);
-        System.debug('Sum is: ' + sum);
+    public static void displayAddition(Integer num1, Integer num2) {
+        Integer result = add(num1, num2);
+        System.debug('The result of ' + num1 + ' + ' + num2 + ' = ' + result);
     }
 }
