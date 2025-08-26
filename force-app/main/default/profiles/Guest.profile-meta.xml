@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Chatter Free User</fullName>
+    <fullName>Guest</fullName>
     <applicationVisibilities>
         <application>Copado_Monitoring_Center</application>
         <default>false</default>
@@ -128,8 +128,8 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Chatter</application>
-        <default>true</default>
-        <visible>true</visible>
+        <default>false</default>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Community</application>
@@ -183,8 +183,8 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Platform</application>
-        <default>false</default>
-        <visible>false</visible>
+        <default>true</default>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Sales</application>
@@ -13360,7 +13360,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.ParentId</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -23559,11 +23559,11 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>copado__Artifact__c-copado__Artifact Layout</layout>
-        <recordType>copado__Artifact__c.copado__User_Story_Bundle</recordType>
+        <recordType>copado__Artifact__c.copado__Package_Artifact</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>copado__Artifact__c-copado__Package Layout</layout>
-        <recordType>copado__Artifact__c.copado__Package_Artifact</recordType>
+        <layout>copado__Artifact__c-copado__Artifact Layout</layout>
+        <recordType>copado__Artifact__c.copado__User_Story_Bundle</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>copado__Automation_Event__c-copado__MC Automation Event Layout</layout>
@@ -23765,7 +23765,7 @@
         <layout>copado__Git_Org_Commit__c-copado__Git Org Commit Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>copado__Git_Repository__c-copado__Git Repository Layout Lightning</layout>
+        <layout>copado__Git_Repository__c-copado__Git Server Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>copado__Installed_Artifact_Version__c-copado__Installed Package Version Layout</layout>
@@ -24072,7 +24072,7 @@
         <recordType>copado__User_Story__c.copado__User_Story</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>copado__User_Story__c-copado__Utility</layout>
+        <layout>copado__User_Story__c-copado__User Story Layout</layout>
         <recordType>copado__User_Story__c.copado__Utility</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -27364,19 +27364,19 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-AuthorizationForm</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-AuthorizationFormConsent</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-AuthorizationFormDataUse</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-AuthorizationFormText</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-BusinessBrand</tab>
@@ -27400,7 +27400,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Chatter</tab>
-        <visibility>Hidden</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-CollaborationGroup</tab>
@@ -27432,7 +27432,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-ContactPointTypeConsent</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-ContactRequest</tab>
@@ -27456,11 +27456,11 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DataUseLegalBasis</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DataUsePurpose</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-DeleteEvent</tab>
@@ -27698,5 +27698,5 @@
         <tab>standard-report</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
-    <userLicense>Chatter Free</userLicense>
+    <userLicense>Guest</userLicense>
 </Profile>
